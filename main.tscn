@@ -1,0 +1,385 @@
+[gd_scene format=3 uid="uid://dsje5u21dpl3r"]
+
+[ext_resource type="Shader" uid="uid://dvvgahlwprrio" path="res://shaders/rounded.tres" id="1_0xm2m"]
+[ext_resource type="Theme" uid="uid://q2wgp3st3wj8" path="res://themes/default_dark.tres" id="1_h2yge"]
+[ext_resource type="Texture2D" uid="uid://di6u5riev0dpd" path="res://resources/icons/home.svg" id="2_5vw27"]
+[ext_resource type="Texture2D" uid="uid://ds7sh42jqsv17" path="res://resources/icons/bell.svg" id="3_7mycd"]
+[ext_resource type="Texture2D" uid="uid://cpe324nsw3jeq" path="res://resources/icons/microphone.svg" id="4_272bh"]
+[ext_resource type="Texture2D" uid="uid://kyk8a2gr648m" path="res://resources/icons/headphones.svg" id="5_5vw27"]
+[ext_resource type="Texture2D" uid="uid://dxgunujjtnf5j" path="res://resources/icons/chevron-down.svg" id="5_272bh"]
+[ext_resource type="Texture2D" uid="uid://pcdmsgq53jcg" path="res://resources/icons/settings.svg" id="6_kek77"]
+[ext_resource type="Texture2D" uid="uid://rrxfjwl7h2qv" path="res://resources/icons/pin.svg" id="9_kek77"]
+[ext_resource type="Texture2D" uid="uid://cm2b2y87nwrc2" path="res://resources/icons/plus.svg" id="10_w48qg"]
+[ext_resource type="Texture2D" uid="uid://vlfgqi1jq74d" path="res://resources/icons/gif.svg" id="11_vivmo"]
+[ext_resource type="Texture2D" uid="uid://cicshg3pwvqur" path="res://resources/icons/sticker-2.svg" id="12_2cqfq"]
+[ext_resource type="Texture2D" uid="uid://da4y7we0qfyhp" path="res://resources/icons/mood-smile-beam.svg" id="13_yaehf"]
+[ext_resource type="Texture2D" uid="uid://d3uyfis4m7oys" path="res://resources/icons/send-2.svg" id="14_074og"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_h2yge"]
+shader = ExtResource("1_0xm2m")
+shader_parameter/rect_size = 42
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_1bvp3"]
+
+[node name="Control" type="PanelContainer" unique_id=217948274]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_h2yge")
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=1251155200]
+layout_mode = 2
+theme_override_constants/margin_left = 4
+theme_override_constants/margin_top = 4
+theme_override_constants/margin_right = 4
+theme_override_constants/margin_bottom = 4
+
+[node name="HSplitContainer" type="HSplitContainer" parent="MarginContainer" unique_id=2013734679]
+layout_mode = 2
+split_offsets = PackedInt32Array(300)
+drag_area_highlight_in_editor = true
+split_offset = 300
+
+[node name="LeftSidebar" type="VBoxContainer" parent="MarginContainer/HSplitContainer" unique_id=295324314]
+custom_minimum_size = Vector2(300, 0)
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/HSplitContainer/LeftSidebar" unique_id=1302414511]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="SpacesPanel" type="PanelContainer" parent="MarginContainer/HSplitContainer/LeftSidebar/HBoxContainer" unique_id=705750831]
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/HSplitContainer/LeftSidebar/HBoxContainer/SpacesPanel" unique_id=761235646]
+layout_mode = 2
+theme_override_constants/margin_left = 4
+theme_override_constants/margin_top = 4
+theme_override_constants/margin_right = 4
+theme_override_constants/margin_bottom = 4
+
+[node name="ScrollContainer" type="ScrollContainer" parent="MarginContainer/HSplitContainer/LeftSidebar/HBoxContainer/SpacesPanel/MarginContainer" unique_id=1311247886]
+layout_mode = 2
+horizontal_scroll_mode = 0
+vertical_scroll_mode = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/HSplitContainer/LeftSidebar/HBoxContainer/SpacesPanel/MarginContainer/ScrollContainer" unique_id=954201544]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="TextureButton" type="Button" parent="MarginContainer/HSplitContainer/LeftSidebar/HBoxContainer/SpacesPanel/MarginContainer/ScrollContainer/VBoxContainer" unique_id=1719509843]
+custom_minimum_size = Vector2(52, 52)
+layout_mode = 2
+theme_type_variation = &"RoundedButton"
+icon = ExtResource("2_5vw27")
+icon_alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/HSplitContainer/LeftSidebar/HBoxContainer" unique_id=1711661050]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="ToolbarLeft" type="PanelContainer" parent="MarginContainer/HSplitContainer/LeftSidebar/HBoxContainer/VBoxContainer" unique_id=500668129]
+custom_minimum_size = Vector2(0, 52)
+layout_mode = 2
+theme_type_variation = &"ToolbarLeft"
+
+[node name="TEMP_Label" type="Label" parent="MarginContainer/HSplitContainer/LeftSidebar/HBoxContainer/VBoxContainer/ToolbarLeft" unique_id=1633632232]
+layout_mode = 2
+text = "space name"
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/HSplitContainer/LeftSidebar/HBoxContainer/VBoxContainer" unique_id=1739720151]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/margin_right = 2
+
+[node name="RoomsPanel" type="PanelContainer" parent="MarginContainer/HSplitContainer/LeftSidebar/HBoxContainer/VBoxContainer/MarginContainer" unique_id=911325977]
+layout_mode = 2
+
+[node name="TEMP_Label" type="Label" parent="MarginContainer/HSplitContainer/LeftSidebar/HBoxContainer/VBoxContainer/MarginContainer/RoomsPanel" unique_id=1696025205]
+layout_mode = 2
+text = "rooms panel"
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/HSplitContainer/LeftSidebar" unique_id=907643707]
+layout_mode = 2
+theme_override_constants/margin_right = 2
+
+[node name="UserPanel" type="PanelContainer" parent="MarginContainer/HSplitContainer/LeftSidebar/MarginContainer" unique_id=1556217872]
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/HSplitContainer/LeftSidebar/MarginContainer/UserPanel" unique_id=802942210]
+layout_mode = 2
+theme_override_constants/margin_left = 4
+theme_override_constants/margin_top = 4
+theme_override_constants/margin_right = 4
+theme_override_constants/margin_bottom = 4
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/HSplitContainer/LeftSidebar/MarginContainer/UserPanel/MarginContainer" unique_id=719165678]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/HSplitContainer/LeftSidebar/MarginContainer/UserPanel/MarginContainer/VBoxContainer" unique_id=1420902942]
+layout_mode = 2
+
+[node name="Button" type="Button" parent="MarginContainer/HSplitContainer/LeftSidebar/MarginContainer/UserPanel/MarginContainer/VBoxContainer/HBoxContainer" unique_id=1779982508]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/HSplitContainer/LeftSidebar/MarginContainer/UserPanel/MarginContainer/VBoxContainer/HBoxContainer/Button" unique_id=294656181]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 4
+theme_override_constants/margin_top = 4
+theme_override_constants/margin_right = 4
+theme_override_constants/margin_bottom = 4
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/HSplitContainer/LeftSidebar/MarginContainer/UserPanel/MarginContainer/VBoxContainer/HBoxContainer/Button/MarginContainer" unique_id=114625527]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/HSplitContainer/LeftSidebar/MarginContainer/UserPanel/MarginContainer/VBoxContainer/HBoxContainer/Button/MarginContainer/HBoxContainer" unique_id=2124697736]
+texture_filter = 4
+material = SubResource("ShaderMaterial_h2yge")
+custom_minimum_size = Vector2(42, 42)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 4
+texture = SubResource("PlaceholderTexture2D_1bvp3")
+expand_mode = 2
+stretch_mode = 4
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/HSplitContainer/LeftSidebar/MarginContainer/UserPanel/MarginContainer/VBoxContainer/HBoxContainer/Button/MarginContainer/HBoxContainer" unique_id=563037555]
+layout_mode = 2
+size_flags_vertical = 4
+
+[node name="DisplayNameLabel" type="Label" parent="MarginContainer/HSplitContainer/LeftSidebar/MarginContainer/UserPanel/MarginContainer/VBoxContainer/HBoxContainer/Button/MarginContainer/HBoxContainer/VBoxContainer" unique_id=15786405]
+layout_mode = 2
+text = "display name"
+
+[node name="UsernameLabel" type="Label" parent="MarginContainer/HSplitContainer/LeftSidebar/MarginContainer/UserPanel/MarginContainer/VBoxContainer/HBoxContainer/Button/MarginContainer/HBoxContainer/VBoxContainer" unique_id=938301885]
+layout_mode = 2
+theme_type_variation = &"Subtitle"
+text = "username"
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="MarginContainer/HSplitContainer/LeftSidebar/MarginContainer/UserPanel/MarginContainer/VBoxContainer" unique_id=1473450894]
+custom_minimum_size = Vector2(0, 32)
+layout_mode = 2
+
+[node name="NotificationsButton" type="Button" parent="MarginContainer/HSplitContainer/LeftSidebar/MarginContainer/UserPanel/MarginContainer/VBoxContainer/HBoxContainer2" unique_id=236527707]
+layout_mode = 2
+size_flags_horizontal = 3
+icon = ExtResource("3_7mycd")
+icon_alignment = 1
+
+[node name="MicrophoneOptsContainer" type="HBoxContainer" parent="MarginContainer/HSplitContainer/LeftSidebar/MarginContainer/UserPanel/MarginContainer/VBoxContainer/HBoxContainer2" unique_id=266121556]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 1
+
+[node name="MicrophoneButton" type="Button" parent="MarginContainer/HSplitContainer/LeftSidebar/MarginContainer/UserPanel/MarginContainer/VBoxContainer/HBoxContainer2/MicrophoneOptsContainer" unique_id=1808836262]
+layout_mode = 2
+size_flags_horizontal = 3
+icon = ExtResource("4_272bh")
+icon_alignment = 1
+
+[node name="MenuButton" type="MenuButton" parent="MarginContainer/HSplitContainer/LeftSidebar/MarginContainer/UserPanel/MarginContainer/VBoxContainer/HBoxContainer2/MicrophoneOptsContainer" unique_id=432004565]
+custom_minimum_size = Vector2(20, 0)
+layout_mode = 2
+flat = false
+icon_alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/HSplitContainer/LeftSidebar/MarginContainer/UserPanel/MarginContainer/VBoxContainer/HBoxContainer2/MicrophoneOptsContainer/MenuButton" unique_id=951828725]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -12.0
+offset_top = -12.0
+offset_right = 12.0
+offset_bottom = 12.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("5_272bh")
+
+[node name="HeadphoneOptsContainer" type="HBoxContainer" parent="MarginContainer/HSplitContainer/LeftSidebar/MarginContainer/UserPanel/MarginContainer/VBoxContainer/HBoxContainer2" unique_id=1572423555]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 1
+
+[node name="HeadphonesButton" type="Button" parent="MarginContainer/HSplitContainer/LeftSidebar/MarginContainer/UserPanel/MarginContainer/VBoxContainer/HBoxContainer2/HeadphoneOptsContainer" unique_id=1223266915]
+layout_mode = 2
+size_flags_horizontal = 3
+icon = ExtResource("5_5vw27")
+icon_alignment = 1
+
+[node name="MenuButton" type="MenuButton" parent="MarginContainer/HSplitContainer/LeftSidebar/MarginContainer/UserPanel/MarginContainer/VBoxContainer/HBoxContainer2/HeadphoneOptsContainer" unique_id=737364845]
+custom_minimum_size = Vector2(20, 0)
+layout_mode = 2
+flat = false
+icon_alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/HSplitContainer/LeftSidebar/MarginContainer/UserPanel/MarginContainer/VBoxContainer/HBoxContainer2/HeadphoneOptsContainer/MenuButton" unique_id=1040925351]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -12.0
+offset_top = -12.0
+offset_right = 12.0
+offset_bottom = 12.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("5_272bh")
+
+[node name="SettingsButton" type="Button" parent="MarginContainer/HSplitContainer/LeftSidebar/MarginContainer/UserPanel/MarginContainer/VBoxContainer/HBoxContainer2" unique_id=1034830317]
+layout_mode = 2
+size_flags_horizontal = 3
+icon = ExtResource("6_kek77")
+icon_alignment = 1
+
+[node name="HSplitContainer" type="HSplitContainer" parent="MarginContainer/HSplitContainer" unique_id=1640158230]
+layout_mode = 2
+split_offsets = PackedInt32Array(580)
+drag_area_highlight_in_editor = true
+split_offset = 580
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/HSplitContainer/HSplitContainer" unique_id=109287485]
+layout_mode = 2
+
+[node name="ToolbarCenter" type="PanelContainer" parent="MarginContainer/HSplitContainer/HSplitContainer/VBoxContainer" unique_id=1910143672]
+custom_minimum_size = Vector2(0, 52)
+layout_mode = 2
+theme_type_variation = &"ToolbarCenter"
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/HSplitContainer/HSplitContainer/VBoxContainer/ToolbarCenter" unique_id=1654205137]
+layout_mode = 2
+theme_override_constants/margin_left = 6
+theme_override_constants/margin_top = 4
+theme_override_constants/margin_right = 6
+theme_override_constants/margin_bottom = 4
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/HSplitContainer/HSplitContainer/VBoxContainer/ToolbarCenter/MarginContainer" unique_id=1303245641]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/HSplitContainer/HSplitContainer/VBoxContainer/ToolbarCenter/MarginContainer/HBoxContainer" unique_id=187631789]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+
+[node name="TEMP_Label" type="Label" parent="MarginContainer/HSplitContainer/HSplitContainer/VBoxContainer/ToolbarCenter/MarginContainer/HBoxContainer/VBoxContainer" unique_id=1261367658]
+layout_mode = 2
+text = "room name"
+
+[node name="TEMP_Label2" type="Label" parent="MarginContainer/HSplitContainer/HSplitContainer/VBoxContainer/ToolbarCenter/MarginContainer/HBoxContainer/VBoxContainer" unique_id=54455567]
+layout_mode = 2
+theme_type_variation = &"Subtitle"
+text = "room topic"
+
+[node name="Button" type="Button" parent="MarginContainer/HSplitContainer/HSplitContainer/VBoxContainer/ToolbarCenter/MarginContainer/HBoxContainer" unique_id=480557450]
+layout_mode = 2
+size_flags_vertical = 4
+icon = ExtResource("9_kek77")
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/HSplitContainer/HSplitContainer/VBoxContainer" unique_id=889149654]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/margin_left = 2
+theme_override_constants/margin_right = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/HSplitContainer/HSplitContainer/VBoxContainer/MarginContainer" unique_id=620184398]
+layout_mode = 2
+
+[node name="MessageHistoryPanel" type="PanelContainer" parent="MarginContainer/HSplitContainer/HSplitContainer/VBoxContainer/MarginContainer/VBoxContainer" unique_id=1900194829]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="TEMP_Label" type="Label" parent="MarginContainer/HSplitContainer/HSplitContainer/VBoxContainer/MarginContainer/VBoxContainer/MessageHistoryPanel" unique_id=393872114]
+layout_mode = 2
+text = "message history"
+
+[node name="TextInputPanel" type="PanelContainer" parent="MarginContainer/HSplitContainer/HSplitContainer/VBoxContainer/MarginContainer/VBoxContainer" unique_id=1648854904]
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/HSplitContainer/HSplitContainer/VBoxContainer/MarginContainer/VBoxContainer/TextInputPanel" unique_id=538761053]
+layout_mode = 2
+theme_override_constants/margin_left = 4
+theme_override_constants/margin_top = 4
+theme_override_constants/margin_right = 4
+theme_override_constants/margin_bottom = 4
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/HSplitContainer/HSplitContainer/VBoxContainer/MarginContainer/VBoxContainer/TextInputPanel/MarginContainer" unique_id=1324820140]
+layout_mode = 2
+
+[node name="AttachmentButton" type="Button" parent="MarginContainer/HSplitContainer/HSplitContainer/VBoxContainer/MarginContainer/VBoxContainer/TextInputPanel/MarginContainer/HBoxContainer" unique_id=1616961133]
+layout_mode = 2
+size_flags_vertical = 0
+icon = ExtResource("10_w48qg")
+
+[node name="TextEdit" type="TextEdit" parent="MarginContainer/HSplitContainer/HSplitContainer/VBoxContainer/MarginContainer/VBoxContainer/TextInputPanel/MarginContainer/HBoxContainer" unique_id=522953076]
+layout_mode = 2
+size_flags_horizontal = 3
+placeholder_text = "Send a message..."
+wrap_mode = 1
+
+[node name="GifPickerButton" type="Button" parent="MarginContainer/HSplitContainer/HSplitContainer/VBoxContainer/MarginContainer/VBoxContainer/TextInputPanel/MarginContainer/HBoxContainer" unique_id=815264374]
+layout_mode = 2
+size_flags_vertical = 0
+icon = ExtResource("11_vivmo")
+
+[node name="StickerButton" type="Button" parent="MarginContainer/HSplitContainer/HSplitContainer/VBoxContainer/MarginContainer/VBoxContainer/TextInputPanel/MarginContainer/HBoxContainer" unique_id=349042884]
+layout_mode = 2
+size_flags_vertical = 0
+icon = ExtResource("12_2cqfq")
+
+[node name="EmojiButton" type="Button" parent="MarginContainer/HSplitContainer/HSplitContainer/VBoxContainer/MarginContainer/VBoxContainer/TextInputPanel/MarginContainer/HBoxContainer" unique_id=409110078]
+layout_mode = 2
+size_flags_vertical = 0
+icon = ExtResource("13_yaehf")
+
+[node name="SendButton" type="Button" parent="MarginContainer/HSplitContainer/HSplitContainer/VBoxContainer/MarginContainer/VBoxContainer/TextInputPanel/MarginContainer/HBoxContainer" unique_id=1948178683]
+layout_mode = 2
+size_flags_vertical = 0
+icon = ExtResource("14_074og")
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="MarginContainer/HSplitContainer/HSplitContainer" unique_id=347940851]
+custom_minimum_size = Vector2(256, 0)
+layout_mode = 2
+
+[node name="ToolbarRight" type="PanelContainer" parent="MarginContainer/HSplitContainer/HSplitContainer/VBoxContainer2" unique_id=2027747043]
+custom_minimum_size = Vector2(0, 52)
+layout_mode = 2
+theme_type_variation = &"ToolbarRight"
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/HSplitContainer/HSplitContainer/VBoxContainer2/ToolbarRight" unique_id=1266268576]
+layout_mode = 2
+theme_override_constants/margin_left = 6
+theme_override_constants/margin_top = 4
+theme_override_constants/margin_right = 4
+theme_override_constants/margin_bottom = 4
+
+[node name="LineEdit" type="LineEdit" parent="MarginContainer/HSplitContainer/HSplitContainer/VBoxContainer2/ToolbarRight/MarginContainer" unique_id=1801294191]
+layout_mode = 2
+size_flags_vertical = 4
+placeholder_text = "Search..."
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/HSplitContainer/HSplitContainer/VBoxContainer2" unique_id=653440976]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/margin_left = 2
+
+[node name="MembersPanel" type="PanelContainer" parent="MarginContainer/HSplitContainer/HSplitContainer/VBoxContainer2/MarginContainer" unique_id=1408815087]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="TEMP_Label" type="Label" parent="MarginContainer/HSplitContainer/HSplitContainer/VBoxContainer2/MarginContainer/MembersPanel" unique_id=1333481338]
+layout_mode = 2
+text = "members panel"

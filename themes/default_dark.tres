@@ -1,0 +1,39 @@
+[gd_resource type="Theme" format=3 uid="uid://q2wgp3st3wj8"]
+
+[sub_resource type="ImageTexture" id="ImageTexture_iu38g"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5e7fv"]
+bg_color = Color(0.11372549, 0.11372549, 0.11372549, 1)
+corner_radius_top_left = 1000
+corner_radius_top_right = 1000
+corner_radius_bottom_right = 1000
+corner_radius_bottom_left = 1000
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_iu38g"]
+bg_color = Color(0.13333334, 0.13333334, 0.13333334, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8vnab"]
+bg_color = Color(0.13333334, 0.13333334, 0.13333334, 1)
+corner_radius_top_left = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vhynu"]
+bg_color = Color(0.13333334, 0.13333334, 0.13333334, 1)
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+
+[resource]
+HSplitContainer/constants/separation = 0
+HSplitContainer/icons/grabber = SubResource("ImageTexture_iu38g")
+RoundedButton/base_type = &"Button"
+RoundedButton/styles/normal = SubResource("StyleBoxFlat_5e7fv")
+Subtitle/base_type = &"Label"
+Subtitle/colors/font_color = Color(0.66, 0.66, 0.66, 1)
+Subtitle/font_sizes/font_size = 12
+TextEdit/font_sizes/font_size = 12
+ToolbarCenter/base_type = &"PanelContainer"
+ToolbarCenter/styles/panel = SubResource("StyleBoxFlat_iu38g")
+ToolbarLeft/base_type = &"PanelContainer"
+ToolbarLeft/styles/panel = SubResource("StyleBoxFlat_8vnab")
+ToolbarRight/base_type = &"PanelContainer"
+ToolbarRight/styles/panel = SubResource("StyleBoxFlat_vhynu")

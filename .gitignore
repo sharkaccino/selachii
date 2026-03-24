@@ -1,0 +1,13 @@
+# Local files/directories
+*.local
+/.local
+
+# Build Directories
+/build
+
+# Godot 4+ specific ignores
+.godot/
+/android/
+
+# Auto-generated files
+commit.txt
