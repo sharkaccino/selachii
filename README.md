@@ -2,6 +2,8 @@
 
 <img src="https://raw.githubusercontent.com/sharkaccino/selachii/main/resources/selachii/logo.png" align="right" height="150px">
 
+### (WORK IN PROGRESS)
+
 Matrix client built with Godot.
 
 <a href="../../releases"><img src="https://img.shields.io/github/downloads/sharkaccino/selachii/total?style=for-the-badge" alt="Downloads" /></a>
